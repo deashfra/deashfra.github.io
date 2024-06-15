@@ -64,4 +64,24 @@ body {
     text-align: center;
     margin-top: 20px;
   }
+  .bubble {
+    position: absolute;
+    background-color: #9A8C98; /* Warna bubble */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none; /* Agar bubble tidak mengganggu interaksi mouse */
+    animation: bubbleAnim 2s ease-out;
+  }
   
+  @keyframes bubbleAnim {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+    
