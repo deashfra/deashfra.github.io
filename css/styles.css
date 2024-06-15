@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; 
     background-color: #F2E9E4;
     color: #22223B;
     height: 100%;
@@ -36,10 +36,15 @@
     padding: 20px;
   }
   
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
   .profile-photo {
     position: relative;
     z-index: 2;
-    margin-top: -50px; 
+    margin-top: -50px;
   }
   
   .profile-img {
@@ -52,7 +57,7 @@
   }
   
   .profile-img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
   
   .intro {
@@ -60,13 +65,13 @@
   }
   
   h1 {
-    font-size: 3rem; /* Ukuran teks "Hi!" diperbesar */
-    font-weight: bold; /* Teks "Hi!" dibuat tebal */
+    font-size: 3rem;
+    font-weight: bold;
   }
   
   .intro-text {
-    font-size: 1.5rem; /* Ukuran teks intro disesuaikan */
-    line-height: 1.6; /* Line-height disesuaikan untuk memperbaiki keterbacaan */
+    font-size: 1.5rem;
+    line-height: 1.6;
     margin-top: 10px;
   }
   
@@ -116,21 +121,11 @@
     color: #F2E9E4;
   }
   
-  /* Interaktif Background */
-  body::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background: linear-gradient(-45deg, #22223B, #4A4E69, #9A8C98, #C9ADA7, #F2E9E4);
-    animation: ddna 15s infinite linear;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+  .footer-logo {
+    margin-right: 10px;
   }
   
-  @keyframes ddna {
-    0% { background-position: 0 0; }
-    100% { background-position: 1000% 1000%; }
-  }  
+  .footer-logo img {
+    height: 20px;
+  }
+  
