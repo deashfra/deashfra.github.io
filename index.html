@@ -3,6 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Background with Bubbles</title>
+  <style>
+    body {
+      background-color: #22223B;
+      overflow: hidden;
+    }
+
+    .bubble {
+      position: absolute;
+      background-color: #4A4E69; /* Warna bubble */
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      pointer-events: none; /* Agar bubble tidak mengganggu interaksi mouse */
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('mousemove', function(event) {
+      const bubble = document.createElement('div');
+      bubble.className = 'bubble';
+      bubble.style.left = event.pageX + 'px';
+      bubble.style.top = event.pageY + 'px';
+      document.body.appendChild(bubble);
+
+      // Hapus bubble setelah beberapa detik
+      setTimeout(function() {
+        bubble.remove();
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Deashfra</title>
   <link rel="stylesheet" href="styles.css">
   <style>
