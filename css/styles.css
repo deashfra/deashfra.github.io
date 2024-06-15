@@ -15,4 +15,14 @@ body {
   body:hover {
     background: linear-gradient(to bottom, #F2E9E4, #C9ADA7, #9A8C98, #4A4E69, #22223B);
   }
+  .social-media a {
+    display: inline-block;
+    text-decoration: none;
+    color: #4A4E69;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #4A4E69;
+    border-radius: 30px; /* Rounded corners */
+    transition: all 0.3s ease;
+  }
   
