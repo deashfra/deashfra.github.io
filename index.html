@@ -3,135 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Background with Bubbles</title>
-  <style>
-    body {
-      background-color: #22223B;
-      overflow: hidden;
-    }
-
-    .bubble {
-      position: absolute;
-      background-color: #4A4E69; /* Warna bubble */
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      pointer-events: none; /* Agar bubble tidak mengganggu interaksi mouse */
-    }
-  </style>
+  <title>Portfolio of Deashfra</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <script>
-    document.addEventListener('mousemove', function(event) {
-      const bubble = document.createElement('div');
-      bubble.className = 'bubble';
-      bubble.style.left = event.pageX + 'px';
-      bubble.style.top = event.pageY + 'px';
-      document.body.appendChild(bubble);
-
-      // Hapus bubble setelah beberapa detik
-      setTimeout(function() {
-        bubble.remove();
-      }, 2000);
-    });
-  </script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Deashfra</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background: linear-gradient(to bottom, #22223B, #4A4E69, #9A8C98, #C9ADA7, #F2E9E4);
-      font-family: serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    
-    .header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    
-    .header img {
-      width: 50px; /* Ukuran ikon kupu-kupu */
-      margin-right: 10px;
-    }
-    
-    .profile-picture {
-      width: 60px; /* Ukuran foto profil dalam frame lingkaran */
-      height: 60px;
-      border-radius: 50%; /* Frame lingkaran */
-      overflow: hidden;
-      margin-right: 20px;
-    }
-    
-    .profile-picture img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    
-    .social-media {
-      display: flex;
-      margin-top: 20px;
-    }
-    
-    .social-media a {
-      display: inline-block;
-      text-decoration: none;
-      color: #4A4E69; /* Warna teks sosial media */
-      padding: 10px 20px;
-      margin: 0 10px;
-      border: 2px solid #4A4E69; /* Warna border sosial media */
-      border-radius: 20px; /* Rounded corners */
-      transition: all 0.3s ease;
-    }
-    
-    .social-media a:hover {
-      background-color: #4A4E69; /* Warna latar belakang saat hover */
-      color: #F2E9E4; /* Warna teks saat hover */
-    }
-  </style>
-</head>
-<body>
-  <header class="header">
-    <img src="butterfly.png" alt="Butterfly Icon">
-    <div class="profile-picture">
-      <img src="photo.PNG" alt="Profile Photo">
+  <header>
+    <div class="logo">
+      <img src="images/butterfly.png" alt="Butterfly Icon">
     </div>
-    <div class="social-media">
+    <div class="profile-photo">
+      <img src="images/photo.PNG" alt="Profile Photo">
+    </div>
+  </header>
+  
+  <main>
+    <h1>Hello, I'm Deashfra!</h1>
+    <p>Welcome to my portfolio.</p>
+    
+    <div class="social-links">
       <a href="mailto:deashafiraan@gmail.com">Email</a>
       <a href="https://linkedin.com/deashfra" target="_blank">LinkedIn</a>
       <a href="https://github.com/deashfra" target="_blank">GitHub</a>
       <a href="https://medium.com/@dyeiydy" target="_blank">Medium</a>
       <a href="https://instagram.com/deashfra" target="_blank">Instagram</a>
     </div>
-  </header>
-  
-  <main>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Explore my work and connect with me!</p>
     
-    <div class="tools-section">
-      <h2>Tools</h2>
-      <a href="https://deashfra.github.io/portfolio" target="_blank">View My Portfolio</a>
+    <div class="tools">
+      <a href="https://deashfra.github.io/portfolio" target="_blank">View my Portfolio</a>
     </div>
   </main>
-  
+
   <footer>
     <p>2024 &copy; deashfra</p>
   </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>
