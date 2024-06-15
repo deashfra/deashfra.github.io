@@ -7,20 +7,10 @@
   body {
     font-family: 'Roboto', sans-serif;
     color: #F2E9E4; 
+    background-color: #22223B; 
     height: 100vh; 
     overflow: hidden; 
     position: relative;
-  }
-  
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .logo img {
-    height: 30px;
   }
   
   .main {

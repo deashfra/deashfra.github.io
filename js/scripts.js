@@ -4,4 +4,5 @@ document.addEventListener('mousemove', (e) => {
     const mouseY = e.clientY / body.clientHeight * 100;
     body.style.backgroundPositionX = `${mouseX}%`;
     body.style.backgroundPositionY = `${mouseY}%`;
-  });  
+  });
+  
