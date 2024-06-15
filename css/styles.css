@@ -1,93 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #22223B, #4A4E69, #9A8C98, #C9ADA7, #F2E9E4);
+    font-family: serif;
     margin: 0;
     padding: 0;
-    background-color: #F2E9E4;
-    color: #22223B;
-}
-
-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #22223B;
-    color: #F2E9E4;
-    padding: 20px 0;
-}
-
-header .logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-header .logo .butterfly {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-header .logo .profile-photo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid #4A4E69;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #C9ADA7;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #9A8C98;
-}
-
-main {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-main .greeting h1 {
-    color: #4A4E69;
-    margin-bottom: 20px;
-}
-
-main .greeting p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-main .greeting .portfolio-link {
-    background-color: #4A4E69;
-    color: #F2E9E4;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-main .greeting .portfolio-link:hover {
-    background-color: #22223B;
-}
-
-footer {
-    background-color: #22223B;
-    color: #F2E9E4;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+    justify-content: center;
+    height: 100vh;
+    transition: background 0.5s ease; /* Efek transisi saat latar belakang berubah */
+  }
+  
+  /* Efek interaktif saat cursor bergerak */
+  body:hover {
+    background: linear-gradient(to bottom, #F2E9E4, #C9ADA7, #9A8C98, #4A4E69, #22223B);
+  }
+  
