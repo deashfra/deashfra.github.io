@@ -1,13 +1,8 @@
-document.addEventListener('mousemove', function(event) {
-    const bubble = document.createElement('div');
-    bubble.className = 'bubble';
-    bubble.style.left = event.pageX + 'px';
-    bubble.style.top = event.pageY + 'px';
-    document.body.appendChild(bubble);
+document.addEventListener('mousemove', function(e) {
+    const bg = document.querySelector('.interactive-background');
+    const mouseX = e.clientX / window.innerWidth;
+    const mouseY = e.clientY / window.innerHeight;
   
-    // Hapus bubble setelah beberapa detik
-    setTimeout(function() {
-      bubble.remove();
-    }, 2000);
+    bg.style.transform = `translate(-${mouseX * 50}px, -${mouseY * 50}px)`;
   });
   
