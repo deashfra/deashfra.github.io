@@ -1,8 +1,7 @@
-document.addEventListener('mousemove', function(e) {
-    const bg = document.querySelector('.interactive-background');
-    const mouseX = e.clientX / window.innerWidth;
-    const mouseY = e.clientY / window.innerHeight;
-  
-    bg.style.transform = `translate(-${mouseX * 50}px, -${mouseY * 50}px)`;
-  });
-  
+document.addEventListener('mousemove', (e) => {
+    const body = document.querySelector('body');
+    const mouseX = e.clientX / body.clientWidth * 100;
+    const mouseY = e.clientY / body.clientHeight * 100;
+    body.style.backgroundPositionX = `${mouseX}%`;
+    body.style.backgroundPositionY = `${mouseY}%`;
+  });  
