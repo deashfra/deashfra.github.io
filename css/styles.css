@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #F2E9E4;
     color: #22223B;
     height: 100%;
@@ -60,13 +60,13 @@
   }
   
   h1 {
-    font-size: 3rem; 
-    font-weight: bold; 
+    font-size: 3rem; /* Ukuran teks "Hi!" diperbesar */
+    font-weight: bold; /* Teks "Hi!" dibuat tebal */
   }
   
   .intro-text {
-    font-size: 1.5rem; 
-    line-height: 1.6; 
+    font-size: 1.5rem; /* Ukuran teks intro disesuaikan */
+    line-height: 1.6; /* Line-height disesuaikan untuk memperbaiki keterbacaan */
     margin-top: 10px;
   }
   
@@ -122,16 +122,15 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, #22223B, #4A4E69, #9A8C98, #C9ADA7, #F2E9E4);
-    transition: all 0.4s ease-out;
-    z-index: -1;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(-45deg, #22223B, #4A4E69, #9A8C98, #C9ADA7, #F2E9E4);
+    animation: ddna 15s infinite linear;
     transform: translate(-50%, -50%);
+    z-index: -1;
   }
   
-  body:hover::before {
-    width: 250%; 
-    height: 250%;
-  }
-  
+  @keyframes ddna {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000% 1000%; }
+  }  
