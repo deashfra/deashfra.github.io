@@ -10,7 +10,7 @@
     color: #22223B;
     height: 100%;
     overflow-x: hidden;
-    position: relative; 
+    position: relative;
   }
   
   header {
@@ -19,20 +19,20 @@
     align-items: center;
     padding: 20px;
     background-color: #4A4E69;
-    position: relative; 
-    z-index: 1; 
+    position: relative;
+    z-index: 1;
   }
   
   .profile-photo {
-    position: relative; 
-    z-index: 2; 
+    position: relative;
+    z-index: 2;
   }
   
   .profile-photo img {
-    width: 100px; 
+    width: 100px;
     height: 100px;
-    border-radius: 50%; 
-    border: 3px solid #FFFFFF; 
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
@@ -41,8 +41,8 @@
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    position: relative; 
-    z-index: 2; 
+    position: relative;
+    z-index: 2;
   }
   
   .social-links {
@@ -106,13 +106,13 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    pointer-events: none; 
+    pointer-events: none;
     background: radial-gradient(circle, #FFFFFF 10%, transparent 15%),
                 radial-gradient(circle, #FFFFFF 10%, transparent 15%),
                 radial-gradient(circle, #FFFFFF 10%, transparent 15%),
                 radial-gradient(circle, #FFFFFF 10%, transparent 15%),
                 linear-gradient(45deg, #22223B, #4A4E69, #9A8C98, #C9ADA7, #F2E9E4);
-    background-size: 100px 100px; 
+    background-size: 100px 100px;
     background-position: 0 0, 25px 25px, 50px 50px, 75px 75px, center;
   }
   
@@ -123,7 +123,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); 
+    background-color: rgba(0, 0, 0, 0.3);
   }
-  
   
