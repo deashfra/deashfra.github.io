@@ -8,8 +8,8 @@
     font-family: Arial, sans-serif;
     background-color: #F2E9E4;
     color: #22223B;
-    height: 100%; /* Menambahkan height 100% untuk body dan html */
-    overflow-x: hidden; /* Mengatasi horizontal scrollbar */
+    height: 100%; 
+    overflow-x: hidden;
   }
   
   header {
@@ -20,7 +20,7 @@
     background-color: #4A4E69;
   }
   
-  .logo, .profile-photo {
+  .profile-photo {
     margin-right: 10px;
   }
   
@@ -73,10 +73,20 @@
   }
   
   footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     background-color: #22223B;
     color: #F2E9E4;
+  }
+  
+  .logo {
+    margin-right: 10px;
+  }
+  
+  .logo img {
+    height: 10px; /* Atur ukuran logo sesuai kebutuhan */
   }
   
 
